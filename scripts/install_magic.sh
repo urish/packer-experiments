@@ -11,19 +11,19 @@ make -j4
 sudo make install
 sudo rm -rf /tmp/magic
 
-# Add icon to the desktop:
-
-mkdir -p ~/.local/share/applications
-cat << EOF > ~/.local/share/applications/magic.desktop
+# Add icon to the desktop
+mkdir -p ~/Desktop
+cat << EOF > ~/Desktop/magic.desktop
 [Desktop Entry]
 Type=Application
-Name=Magic
+Name=Magic (Sky130A)
 Icon=magic
-Exec=magic -rcfile \$PDK_ROOT/sky130A/libs.tech/magic/sky130A.magicrc
+Exec=magic -rcfile $PDK_ROOT/sky130A/libs.tech/magic/sky130A.magicrc
 Comment=Magic
 Categories=Development;
-Terminal=true
 EOF
+gio set ~/Desktop/magic.desktop metadata::trusted true
+chmod a+x ~/Desktop/magic.desktop
 
 mkdir -p ~/.local/share/icons/hicolor
 cat << EOF > ~/.local/share/icons/hicolor/magic.svg
