@@ -29,6 +29,8 @@ source "virtualbox-iso" "tinytapeout_analog_vm" {
   iso_checksum           = "d2fb80d9ce77511ed500bcc1f813e6f676d4a3577009dfebce24269ca23346a5"
   iso_url                = "https://releases.ubuntu.com/23.10.1/ubuntu-23.10-live-server-amd64.iso"
   memory                 = 8192
+  gfx_controller         = "vmsvga"
+  gfx_vram_size          = 128
   shutdown_command       = "sudo shutdown -h now"
   ssh_password           = "magic"
   ssh_port               = 22
@@ -45,4 +47,12 @@ source "virtualbox-iso" "tinytapeout_analog_vm" {
 
 build {
   sources = ["source.virtualbox-iso.tinytapeout_analog_vm"]
+
+  provisioner "shell" {
+    inline = [
+      "sudo apt-get update",
+      "sudo apt-get upgrade -y",
+      "sudo apt-get remove --autoremove gnome-initial-setup"
+    ]
+  }
 }
