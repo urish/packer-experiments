@@ -25,7 +25,9 @@ jobs:
         id: setup
 
       - name: Install virtualbox
-        run: "apt-get update && apt-get install -y virtualbox"
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y virtualbox
 
       - name: Run `packer init`
         id: init
