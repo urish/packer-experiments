@@ -26,19 +26,22 @@ jobs:
           sudo udevadm control --reload-rules
           sudo udevadm trigger --name-match=kvm
 
-      - name: Setup `packer`
-        uses: hashicorp/setup-packer@main
-        id: setup
-
       - name: Install virtualbox
         run: |
           sudo apt-get update
           sudo apt-get install -y virtualbox
 
-      - name: Run `packer init`
-        id: init
+      - name: Setup `packer`
+        uses: hashicorp/setup-packer@main
+  
+      - name: Configure packer
         run: "packer init ./image.pkr.hcl"
 
-      - name: Run `packer build`
-        id: validate
+      - name: Build VM
         run: "packer build ./image.pkr.hcl"
+
+      - name: Upload VM image
+        uses: actions/upload-artifact@v4
+        with:
+          name: tt_analog_virtualbox_ova
+          path: output-tinytapeout_analog_vm/tinytapeout_analog_vm.ova

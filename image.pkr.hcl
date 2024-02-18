@@ -9,6 +9,7 @@ packer {
 
 source "virtualbox-iso" "tinytapeout_analog_vm" {
   format = "ova"
+  vm_name = "tinytapeout_analog_vm"
   boot_command = [
     "<wait5>c<wait>",
     "set gfxpayload=keep<enter><wait>",
