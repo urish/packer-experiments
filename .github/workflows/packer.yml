@@ -33,7 +33,7 @@ jobs:
 
       - name: Setup `packer`
         uses: hashicorp/setup-packer@main
-        with:
+        env:
           PACKER_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   
       - name: Configure packer
