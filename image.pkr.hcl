@@ -24,7 +24,7 @@ source "virtualbox-iso" "tinytapeout_analog_vm" {
   cpus                   = 8
   disk_size              = 32768
   guest_os_type          = "Ubuntu_64"
-  headless               = false
+  headless               = true
   http_directory         = "./http"
   iso_checksum           = "d2fb80d9ce77511ed500bcc1f813e6f676d4a3577009dfebce24269ca23346a5"
   iso_url                = "https://releases.ubuntu.com/23.10.1/ubuntu-23.10-live-server-amd64.iso"
