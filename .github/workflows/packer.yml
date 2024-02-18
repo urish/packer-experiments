@@ -24,6 +24,9 @@ jobs:
         uses: hashicorp/setup-packer@main
         id: setup
 
+      - name: Install virtualbox
+        run: "apt-get update && apt-get install -y virtualbox"
+
       - name: Run `packer init`
         id: init
         run: "packer init ./image.pkr.hcl"
