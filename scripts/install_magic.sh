@@ -9,7 +9,7 @@ cd /tmp/magic
 ./configure
 make -j4 
 sudo make install
-rm -rf /tmp/magic
+sudo rm -rf /tmp/magic
 
 # Add icon to the desktop:
 
