@@ -7,4 +7,4 @@ pipx ensurepath
 export PATH=$PATH:$HOME/.local/bin
 pipx install volare
 volare enable $PDK_VERSION
-echo "export PDK_ROOT=$PDK_ROOT" >> ~/.bashrc
+echo "export PDK_ROOT=$PDK_ROOT" >> ~/.profile
