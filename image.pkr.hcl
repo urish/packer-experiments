@@ -53,7 +53,7 @@ build {
     inline = [
       "sudo apt-get update",
       "sudo apt-get upgrade -y",
-      "sudo apt-get remove --autoremove gnome-initial-setup"
+      "sudo apt-get remove -y --autoremove gnome-initial-setup"
     ]
   }
 
