@@ -64,9 +64,11 @@ build {
       PDK_VERSION     = "bdc9412b3e468c102d01b7cf6337be06ec6e9c9a"
       MAGIC_VERSION   = "8.3.460"
       KLAYOUT_VERSION = "0.28.17"
+      XSCHEM_VERSION  = "3.4.4"
     }
     scripts = [
       "scripts/install_magic.sh",
+      "scripts/install_xschem.sh",
       "scripts/install_klayout.sh",
       "scripts/install_pdk.sh"
     ]
