@@ -28,7 +28,7 @@ source "virtualbox-iso" "tinytapeout_analog_vm" {
   headless               = true
   http_directory         = "./http"
   iso_checksum           = "d2fb80d9ce77511ed500bcc1f813e6f676d4a3577009dfebce24269ca23346a5"
-  iso_url                = "https://releases.ubuntu.com/23.10.1/ubuntu-23.10-live-server-amd64.iso"
+  iso_url                = "https://releases.ubuntu.com/22.04.3/ubuntu-22.04.3-live-server-amd64.iso"
   memory                 = 8192
   gfx_controller         = "vmsvga"
   gfx_vram_size          = 128
