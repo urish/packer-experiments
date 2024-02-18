@@ -71,7 +71,8 @@ build {
       "scripts/install_magic.sh",
       "scripts/install_xschem.sh",
       "scripts/install_klayout.sh",
-      "scripts/install_pdk.sh"
+      "scripts/install_pdk.sh",
+      "scripts/terminal_icon.sh"
     ]
   }
 }
