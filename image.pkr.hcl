@@ -55,7 +55,7 @@ build {
       "sudo apt-get upgrade -y",
       "sudo apt-get remove -y --autoremove gnome-initial-setup"
     ]
-  }
+  }   
 
   provisioner "shell" {
     env = {
@@ -65,7 +65,9 @@ build {
       KLAYOUT_VERSION = "0.28.17"
     }
     scripts = [
-      "scripts/install_magic.sh"
+      "scripts/install_magic.sh",
+      "scripts/install_klayout.sh",
+      "scripts/install_pdk.sh"
     ]
   }
 }
