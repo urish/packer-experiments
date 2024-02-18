@@ -32,6 +32,7 @@ source "virtualbox-iso" "tinytapeout_analog_vm" {
   memory                 = 8192
   gfx_controller         = "vmsvga"
   gfx_vram_size          = 128
+  gfx_accelerate_3d      = true
   shutdown_command       = "sudo shutdown -h now"
   ssh_password           = "magic"
   ssh_port               = 22
