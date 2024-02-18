@@ -37,7 +37,6 @@ source "virtualbox-iso" "tinytapeout_analog_vm" {
   ssh_username           = "ttuser"
   vboxmanage = [
     ["modifyvm", "{{ .Name }}", "--cpu-profile", "host"],
-    ["modifyvm", "{{ .Name }}", "--nat-localhostreachable1", "on"]
   ]
   vrdp_bind_address = "0.0.0.0"
   vrdp_port_max     = 6000
