@@ -22,7 +22,7 @@ source "virtualbox-iso" "tinytapeout_analog_vm" {
     "boot<wait><enter><enter>"
   ]
   boot_wait              = "1s"
-  cpus                   = 8
+  cpus                   = 4
   disk_size              = 32768
   guest_os_type          = "Ubuntu_64"
   headless               = true
