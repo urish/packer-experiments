@@ -54,6 +54,7 @@ build {
     inline = [
       "sudo apt-get update",
       "sudo apt-get upgrade -y",
+      "sudo apt-get install -y ubuntu-desktop-minimal",
       "sudo apt-get remove -y --autoremove gnome-initial-setup"
     ]
   }   
