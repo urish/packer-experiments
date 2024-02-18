@@ -25,14 +25,14 @@ EOF
 gio set ~/Desktop/magic.desktop metadata::trusted true
 chmod a+x ~/Desktop/magic.desktop
 
-mkdir -p ~/.local/share/icons/hicolor
-cat << EOF > ~/.local/share/icons/hicolor/magic.svg
+mkdir -p ~/.icons
+cat << EOF > ~/.icons/magic.svg
 <?xml version="1.0" encoding="iso-8859-1"?>
 <!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 464.731 464.731" style="enable-background:new 0 0 464.731 464.731;" xml:space="preserve">
-<g id="XMLID_207_">
+<g id="XMLID_207_" fill="white">
 	<path id="XMLID_212_" d="M463.056,441.971l-45.894-43.145l29.759-55.521c0.8-1.508,0.379-3.398-1.029-4.395
 		c-1.388-1.011-3.305-0.832-4.487,0.424l-43.146,45.895l-55.533-29.746c-1.515-0.803-3.399-0.377-4.395,1.027
 		c-1.017,1.392-0.815,3.309,0.438,4.488l45.911,43.162l-29.747,55.518c-0.816,1.525-0.378,3.401,1.01,4.412
