@@ -9,8 +9,6 @@ mkdir -p ~/Desktop
 cat << EOF > ~/Desktop/klayout.desktop
 [Desktop Entry]
 Exec=klayout %f
-InitialPreference=2
-MimeType=application/klayout;
 Name=KLayout
 Comment=Layout Viewer
 Icon=klayout
