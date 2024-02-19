@@ -14,7 +14,7 @@ Exec=klayout %f
 Name=KLayout
 Comment=Layout Viewer
 Icon=klayout
-type=Application
+Type=Application
 Categories=Development;Engineering;Electronics;
 EOF
 gio set ~/Desktop/klayout.desktop metadata::trusted true
